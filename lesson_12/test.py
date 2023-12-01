@@ -1,10 +1,15 @@
 from lesson_12.animals_and_transports import Car, Duck, Tiger
+print('Toyota')
 Toyota = Car()
-Toyota.move()
 Toyota.launch()
+stat = Toyota.status
+print(stat)
+Toyota.move()
+print('Donald')
 Donald = Duck()
 Donald.move()
 Donald.voice()
+print('Sherekhan')
 Sherekhan = Tiger()
 Sherekhan.move()
 Sherekhan.voice()
