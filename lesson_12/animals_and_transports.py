@@ -18,8 +18,18 @@ class Tiger(Animal):
 
 
 class Car(Transport):
-    def move(self):
-        print("Ride")
+    status = "Not Started"
 
     def launch(self):
         print('Starting the engine')
+        Car.status = "Started"
+
+    def move(self):
+        if Car.status == "Started":
+            print("Ride")
+        else:
+            print("Cannot ride, launch first")
+
+
+
+
