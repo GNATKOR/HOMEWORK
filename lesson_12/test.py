@@ -1,0 +1,10 @@
+from lesson_12.animals_and_transports import Car, Duck, Tiger
+Toyota = Car()
+Toyota.move()
+Toyota.launch()
+Donald = Duck()
+Donald.move()
+Donald.voice()
+Sherekhan = Tiger()
+Sherekhan.move()
+Sherekhan.voice()
