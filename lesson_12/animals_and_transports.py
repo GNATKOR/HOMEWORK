@@ -18,14 +18,15 @@ class Tiger(Animal):
 
 
 class Car(Transport):
-    status = "Not Started"
+    def __init__(self):
+        self.status = "Car is not launched!"
 
     def launch(self):
         print('Starting the engine')
-        Car.status = "Started"
+        self.status = "Started"
 
     def move(self):
-        if Car.status == "Started":
+        if self.status == "Started":
             print("Ride")
         else:
             print("Cannot ride, launch first")

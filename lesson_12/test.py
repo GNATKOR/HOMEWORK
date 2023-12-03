@@ -5,6 +5,11 @@ Toyota.launch()
 stat = Toyota.status
 print(stat)
 Toyota.move()
+print('BMW')
+BMW = Car()
+BMW_status = BMW.status
+print(BMW_status)
+BMW.move()
 print('Donald')
 Donald = Duck()
 Donald.move()
