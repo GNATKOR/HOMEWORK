@@ -23,10 +23,10 @@ class Car(Transport):
 
     def launch(self):
         print('Starting the engine')
-        self.status = "Started"
+        self.status = "Started!"
 
     def move(self):
-        if self.status == "Started":
+        if self.status == "Started!":
             print("Ride")
         else:
             print("Cannot ride, launch first")
