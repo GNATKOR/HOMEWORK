@@ -3,13 +3,13 @@ import json
 
 class BaseHandler:
     def read(self):
-        ...
+        return NotImplementedError
 
     def append(self, content):
-        ...
+        return NotImplementedError
 
     def close(self):
-        ...
+        return NotImplementedError
 
 
 class JsonHandler(BaseHandler):
