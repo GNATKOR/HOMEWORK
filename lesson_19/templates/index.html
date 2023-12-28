@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PFC APP</title>
+</head>
+<body>
+    <h1>PFC APP</h1>
+    <h2>Create product</h2>
+    <form method="post" action="/products" enctype="application/json">
+        <input type="text" name="name" placeholder="Product name" required>
+        <input type="number" name="calories" placeholder="Calories" required>
+        <input type="number" name="protein" placeholder="Proteins" required>
+        <input type="number" name="fat" placeholder="Fats" required>
+        <input type="number" name="carbohydrates" placeholder="Carbs" required>
+        <button type="submit">CREATE</button>
+    </form>
+    <h2>Get products</h2>
+    <a href="/products">Get products</a>
+</body>
+</html>
+
+

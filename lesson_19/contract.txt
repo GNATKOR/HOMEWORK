@@ -1,0 +1,10 @@
+The PCF application
+My application can:
+1. Create products:
+In order to do this, a function is defined that accepts input data
+on the name of the product and nutritional value.
+An array with data is written to a list object.
+2. Viewing product data:
+The functions for going to the page for selecting the type of information
+to be received (name or calories) are defined
+There are two functions on the selection page that give names and calorie content of products.}
