@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>SUCCESS MESSAGE</title>
+</head>
+<body>
+    <h2>{{ message }}</h2>
+    <img class="min-size" src="{% static 'img/zen.jpg' %}" alt="photo">
+    <form action="http://localhost:8000/">
+   <button class="red_button">TO MAIN</button>
+    </form>
+</body>
+</html>
