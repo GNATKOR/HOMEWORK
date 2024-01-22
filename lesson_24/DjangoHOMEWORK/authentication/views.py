@@ -49,9 +49,12 @@ class SignInView(View):
     def post(self, request):
         email = request.POST['email']
         password = request.POST['password']
+        user_found = False
         for user in Users.objects.all():
             if user.email == email and user.password == password:
-                return render(request, 'signin_success.html', {'message': 'Success!'})
-            else:
-                return render(request, 'signin_decline.html',
-                              {'error_message': 'Invalid email or password!'})
+                user_found = True
+                return render(request, 'signin_success.html',
+                              {'message': 'Success!'})
+        if not user_found:
+            return render(request, 'signin_decline.html',
+                          {'error_message': 'Invalid email or password!'})
