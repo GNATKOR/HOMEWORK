@@ -1,0 +1,6 @@
+Website/application for automotive community. - example: drive2.ru
+Basic functionality:
+Contains the main page with a description of functionality, login and registration form.
+Users will be able to create car logs in which they can blog their own cars
+When creating a logbook will be selected from a list of suggested cars or adding a new car model.
+Users will be able to leave comments to the logs.
